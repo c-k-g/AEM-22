@@ -64,6 +64,24 @@
         
   
   <properties>
+
+
+
+<sonar.host.url>http://104.197.135.227:9000</sonar.host.url>
+<sonar.login>86326cd6d6b89dbe86c8c689fd14e2060fa7f1e4</sonar.login>
+<sonar.projectName>AEM-Sites-Dev</sonar.projectName>
+<sonar.projectKey>AEM-Sites-Dev</sonar.projectKey>
+<sonar.moduleKey>${artifactId}</sonar.moduleKey>
+<sonar.sources>/var/lib/jenkins/workspace/AEM-22</sonar.sources>
+<sonar.java.binaries>/var/lib/jenkins/workspace/AEM-22/core/target/classes</sonar.java.binaries>
+<sonar.jacoco.reportPaths>/var/lib/jenkins/workspace/AEM-22/core/target/jacoco.exec</sonar.jacoco.reportPaths>
+<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+<sonar.projectBaseDir>/var/lib/jenkins/workspace/AEM-22</sonar.projectBaseDir>
+<sonar.java.libraries>/var/lib/jenkins/workspace/AEM-22/core/target/classes</sonar.java.libraries>
+<sonar.exclusions>**/test/**/*,**/target/**/*,**/node_modules/**/*,ui.apps/src/main/content/jcr_root/apps/nyl-foundation/components/content/adaptiveform/**/widget.jsp,**/*.less,ui.apps/src/main/content/jcr_root/etc/clientlibs/fd/themes/nyl-theme/css/theme.css,ui.frontend/src/main/webpack/vendor/**/*,ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/**/**/*.js,nat/src/index.html,misc/**/*,ui.frontend/src/main/webpack/static/index.html,**/*test.html,**/*pom.xml</sonar.exclusions>
+<sonar.coverage.exclusions>ui.apps/src/main/content/jcr_root/apps/nyl-foundation/**,ui.frontend/**,core/src/main/java/com/nyl/foundation/beans/**,nat/**/*.module.ts,nat/**/*index.ts,nat/**/*.spec.ts,nat/src/main.ts,nat/clientlib.config.js,jest.config.js,nat/src/environments/environment.prod.ts,nat/src/environments/environment.ts,nat/src/jestGlobalMocks.ts,core/src/main/java/com/nyl/foundation/constants/**,test-env.js,core/src/main/java/com/nyl/foundation/**/*MBeanImpl.java</sonar.coverage.exclusions>
+
+
                 
     
     <aem.host>localhost</aem.host>
@@ -109,7 +127,14 @@
                 
     
     <plugins>
-                        
+              
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.7.0.1746</version>
+            </plugin>
+
+			  
       
       <!-- Maven Release Plugin -->
                         
