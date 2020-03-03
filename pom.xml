@@ -67,7 +67,7 @@
 
 
 
-<sonar.host.url>http://104.197.135.227:9000</sonar.host.url>
+<sonar.host.url>http://35.202.230.219:9000</sonar.host.url>
 <sonar.login>86326cd6d6b89dbe86c8c689fd14e2060fa7f1e4</sonar.login>
 <sonar.projectName>AEM-Sites-Dev</sonar.projectName>
 <sonar.projectKey>AEM-Sites-Dev</sonar.projectKey>
