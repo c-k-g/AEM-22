@@ -1,2 +1,2 @@
-## AEM-22
+### AEM-22
 Sample AEM Project Archtype 22
